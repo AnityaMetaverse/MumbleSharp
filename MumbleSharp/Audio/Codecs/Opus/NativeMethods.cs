@@ -24,6 +24,7 @@
 // 
 
 using System;
+
 using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -40,20 +41,20 @@ namespace MumbleSharp.Audio.Codecs.Opus
             IntPtr image;
             if (PlatformDetails.IsMac)
             {
-                image = LibraryLoader.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Audio", "Codecs", "Opus", "Libs", "32bit", "libopus.dylib"));
+                image = LibraryLoader.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "lib", "macos", "libopus.dylib"));
             }
             else if (PlatformDetails.IsWindows)
             {
                 if (!Environment.Is64BitProcess)
-                    image = LibraryLoader.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Audio", "Codecs", "Opus", "Libs", "32bit", "opus.dll"));
+                    image = LibraryLoader.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "lib", "win64", "opus.dll"));
                 else
-                    image = LibraryLoader.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Audio", "Codecs", "Opus", "Libs", "64bit", "opus.dll"));
+                    image = LibraryLoader.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "lib", "win32", "opus.dll"));
             }
             else
             {
                 image = LibraryLoader.Load("libopus.so.0");
 				if (image.Equals(IntPtr.Zero))
-                    image = LibraryLoader.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Audio", "Codecs", "Opus", "Libs", "libopus.so"));
+                    image = LibraryLoader.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "lib", "unix", "libopus.so"));
             }
 
             if (image != IntPtr.Zero)

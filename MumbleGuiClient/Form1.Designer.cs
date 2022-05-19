@@ -59,6 +59,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -83,26 +84,29 @@
             this.splitContainer1.Panel2.Controls.Add(this.tvUsers);
             this.splitContainer1.Panel2.Controls.Add(this.btnDisconnect);
             this.splitContainer1.Panel2.Controls.Add(this.btnConnect);
-            this.splitContainer1.Size = new System.Drawing.Size(547, 255);
-            this.splitContainer1.SplitterDistance = 329;
+            this.splitContainer1.Size = new System.Drawing.Size(638, 294);
+            this.splitContainer1.SplitterDistance = 383;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
             // labelVoiceDetectorThreshold
             // 
             this.labelVoiceDetectorThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelVoiceDetectorThreshold.AutoSize = true;
-            this.labelVoiceDetectorThreshold.Location = new System.Drawing.Point(101, 63);
+            this.labelVoiceDetectorThreshold.Location = new System.Drawing.Point(117, 73);
+            this.labelVoiceDetectorThreshold.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelVoiceDetectorThreshold.Name = "labelVoiceDetectorThreshold";
-            this.labelVoiceDetectorThreshold.Size = new System.Drawing.Size(128, 13);
+            this.labelVoiceDetectorThreshold.Size = new System.Drawing.Size(138, 15);
             this.labelVoiceDetectorThreshold.TabIndex = 7;
             this.labelVoiceDetectorThreshold.Text = "Voice Detector Threshold";
             // 
             // numVoiceDetectorThreshold
             // 
             this.numVoiceDetectorThreshold.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.numVoiceDetectorThreshold.Location = new System.Drawing.Point(234, 60);
+            this.numVoiceDetectorThreshold.Location = new System.Drawing.Point(272, 69);
+            this.numVoiceDetectorThreshold.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.numVoiceDetectorThreshold.Name = "numVoiceDetectorThreshold";
-            this.numVoiceDetectorThreshold.Size = new System.Drawing.Size(83, 20);
+            this.numVoiceDetectorThreshold.Size = new System.Drawing.Size(97, 23);
             this.numVoiceDetectorThreshold.TabIndex = 6;
             this.numVoiceDetectorThreshold.Value = new decimal(new int[] {
             50,
@@ -116,9 +120,10 @@
             this.cbPlaybackDevices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbPlaybackDevices.FormattingEnabled = true;
-            this.cbPlaybackDevices.Location = new System.Drawing.Point(3, 6);
+            this.cbPlaybackDevices.Location = new System.Drawing.Point(4, 7);
+            this.cbPlaybackDevices.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbPlaybackDevices.Name = "cbPlaybackDevices";
-            this.cbPlaybackDevices.Size = new System.Drawing.Size(225, 21);
+            this.cbPlaybackDevices.Size = new System.Drawing.Size(261, 23);
             this.cbPlaybackDevices.TabIndex = 5;
             this.cbPlaybackDevices.SelectedIndexChanged += new System.EventHandler(this.cbPlaybackDevices_SelectedIndexChanged);
             // 
@@ -127,18 +132,20 @@
             this.cbRecordingDevices.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbRecordingDevices.FormattingEnabled = true;
-            this.cbRecordingDevices.Location = new System.Drawing.Point(3, 33);
+            this.cbRecordingDevices.Location = new System.Drawing.Point(4, 38);
+            this.cbRecordingDevices.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbRecordingDevices.Name = "cbRecordingDevices";
-            this.cbRecordingDevices.Size = new System.Drawing.Size(225, 21);
+            this.cbRecordingDevices.Size = new System.Drawing.Size(261, 23);
             this.cbRecordingDevices.TabIndex = 4;
             this.cbRecordingDevices.SelectedIndexChanged += new System.EventHandler(this.cbRecordingDevices_SelectedIndexChanged);
             // 
             // btnRecord
             // 
             this.btnRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRecord.Location = new System.Drawing.Point(234, 33);
+            this.btnRecord.Location = new System.Drawing.Point(272, 38);
+            this.btnRecord.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnRecord.Name = "btnRecord";
-            this.btnRecord.Size = new System.Drawing.Size(83, 21);
+            this.btnRecord.Size = new System.Drawing.Size(97, 24);
             this.btnRecord.TabIndex = 3;
             this.btnRecord.Text = "record";
             this.btnRecord.UseVisualStyleBackColor = true;
@@ -149,9 +156,10 @@
             this.tbLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbLog.Location = new System.Drawing.Point(0, 86);
+            this.tbLog.Location = new System.Drawing.Point(0, 99);
+            this.tbLog.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbLog.Name = "tbLog";
-            this.tbLog.Size = new System.Drawing.Size(326, 140);
+            this.tbLog.Size = new System.Drawing.Size(379, 161);
             this.tbLog.TabIndex = 0;
             this.tbLog.Text = "";
             // 
@@ -159,17 +167,19 @@
             // 
             this.tbSendMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbSendMessage.Location = new System.Drawing.Point(3, 232);
+            this.tbSendMessage.Location = new System.Drawing.Point(4, 268);
+            this.tbSendMessage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tbSendMessage.Name = "tbSendMessage";
-            this.tbSendMessage.Size = new System.Drawing.Size(234, 20);
+            this.tbSendMessage.Size = new System.Drawing.Size(271, 23);
             this.tbSendMessage.TabIndex = 1;
             // 
             // btnSend
             // 
             this.btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSend.Location = new System.Drawing.Point(243, 232);
+            this.btnSend.Location = new System.Drawing.Point(283, 268);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(83, 20);
+            this.btnSend.Size = new System.Drawing.Size(97, 23);
             this.btnSend.TabIndex = 2;
             this.btnSend.Text = "send";
             this.btnSend.UseVisualStyleBackColor = true;
@@ -178,9 +188,10 @@
             // labelServer
             // 
             this.labelServer.AutoSize = true;
-            this.labelServer.Location = new System.Drawing.Point(3, 59);
+            this.labelServer.Location = new System.Drawing.Point(4, 68);
+            this.labelServer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelServer.Name = "labelServer";
-            this.labelServer.Size = new System.Drawing.Size(38, 13);
+            this.labelServer.Size = new System.Drawing.Size(39, 15);
             this.labelServer.TabIndex = 9;
             this.labelServer.Text = "Server";
             // 
@@ -188,47 +199,53 @@
             // 
             this.textBoxUserPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxUserPassword.Location = new System.Drawing.Point(55, 30);
+            this.textBoxUserPassword.Location = new System.Drawing.Point(64, 35);
+            this.textBoxUserPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxUserPassword.Name = "textBoxUserPassword";
             this.textBoxUserPassword.PasswordChar = '*';
-            this.textBoxUserPassword.Size = new System.Drawing.Size(156, 20);
+            this.textBoxUserPassword.Size = new System.Drawing.Size(181, 23);
             this.textBoxUserPassword.TabIndex = 5;
+            this.textBoxUserPassword.Text = "123";
             // 
             // textBoxServer
             // 
             this.textBoxServer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxServer.Location = new System.Drawing.Point(55, 56);
+            this.textBoxServer.Location = new System.Drawing.Point(64, 65);
+            this.textBoxServer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxServer.Name = "textBoxServer";
-            this.textBoxServer.Size = new System.Drawing.Size(156, 20);
+            this.textBoxServer.Size = new System.Drawing.Size(181, 23);
             this.textBoxServer.TabIndex = 2;
-            this.textBoxServer.Text = "localhost:64738";
+            this.textBoxServer.Text = "54.76.228.230:64738";
             // 
             // textBoxUserName
             // 
             this.textBoxUserName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxUserName.Location = new System.Drawing.Point(55, 3);
+            this.textBoxUserName.Location = new System.Drawing.Point(64, 3);
+            this.textBoxUserName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxUserName.Name = "textBoxUserName";
-            this.textBoxUserName.Size = new System.Drawing.Size(156, 20);
+            this.textBoxUserName.Size = new System.Drawing.Size(181, 23);
             this.textBoxUserName.TabIndex = 1;
-            this.textBoxUserName.Text = "Test";
+            this.textBoxUserName.Text = "JordanDemo";
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(3, 33);
+            this.labelPassword.Location = new System.Drawing.Point(4, 38);
+            this.labelPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(53, 13);
+            this.labelPassword.Size = new System.Drawing.Size(57, 15);
             this.labelPassword.TabIndex = 8;
             this.labelPassword.Text = "Password";
             // 
             // labelUser
             // 
             this.labelUser.AutoSize = true;
-            this.labelUser.Location = new System.Drawing.Point(3, 6);
+            this.labelUser.Location = new System.Drawing.Point(4, 7);
+            this.labelUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(29, 13);
+            this.labelUser.Size = new System.Drawing.Size(30, 15);
             this.labelUser.TabIndex = 7;
             this.labelUser.Text = "User";
             // 
@@ -237,9 +254,10 @@
             this.tvUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tvUsers.Location = new System.Drawing.Point(3, 111);
+            this.tvUsers.Location = new System.Drawing.Point(4, 128);
+            this.tvUsers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tvUsers.Name = "tvUsers";
-            this.tvUsers.Size = new System.Drawing.Size(208, 141);
+            this.tvUsers.Size = new System.Drawing.Size(242, 162);
             this.tvUsers.TabIndex = 6;
             this.tvUsers.UpdateInterval = 500;
             this.tvUsers.BeforeCollapse += new System.Windows.Forms.TreeViewCancelEventHandler(this.tvUsers_BeforeCollapse);
@@ -248,9 +266,10 @@
             // 
             // btnDisconnect
             // 
-            this.btnDisconnect.Location = new System.Drawing.Point(55, 82);
+            this.btnDisconnect.Location = new System.Drawing.Point(64, 95);
+            this.btnDisconnect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnDisconnect.Name = "btnDisconnect";
-            this.btnDisconnect.Size = new System.Drawing.Size(75, 23);
+            this.btnDisconnect.Size = new System.Drawing.Size(88, 27);
             this.btnDisconnect.TabIndex = 4;
             this.btnDisconnect.Text = "Disconnect";
             this.btnDisconnect.UseVisualStyleBackColor = true;
@@ -258,9 +277,10 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(136, 82);
+            this.btnConnect.Location = new System.Drawing.Point(159, 95);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(75, 23);
+            this.btnConnect.Size = new System.Drawing.Size(88, 27);
             this.btnConnect.TabIndex = 3;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -275,10 +295,11 @@
             // Form1
             // 
             this.AcceptButton = this.btnSend;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 255);
+            this.ClientSize = new System.Drawing.Size(638, 294);
             this.Controls.Add(this.splitContainer1);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.Text = "MumbleSharp Client - GUI version";
             this.splitContainer1.Panel1.ResumeLayout(false);
