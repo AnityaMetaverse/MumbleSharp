@@ -29,6 +29,10 @@ For more info on Mumble please visit https://www.mumble.info/</Description>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.1|AnyCPU'">
+    <OutputPath>G:\GodotProjects\AnityaApp\project\bin\win64\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="mumblesharp.ico" />
     <None Remove="Resources\mumble.ico" />

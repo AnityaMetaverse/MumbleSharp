@@ -45,15 +45,22 @@ namespace MumbleSharp.Audio.Codecs.Opus
             }
             else if (PlatformDetails.IsWindows)
             {
+                string path = "";
                 if (!Environment.Is64BitProcess)
-                    image = LibraryLoader.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "lib", "win64", "opus.dll"));
+                    path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin", "win32", "opus.dll");
                 else
-                    image = LibraryLoader.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "lib", "win32", "opus.dll"));
+                    path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin", "win64", "opus.dll");
+
+                image = LibraryLoader.Load(path);
+                if (image.Equals(IntPtr.Zero))
+                {
+                    throw new Exception("Cannot find Opus library in this path: " + path);
+                }
             }
             else
             {
                 image = LibraryLoader.Load("libopus.so.0");
-				if (image.Equals(IntPtr.Zero))
+                if (image.Equals(IntPtr.Zero))
                     image = LibraryLoader.Load(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "lib", "unix", "libopus.so"));
             }
 
