@@ -35,9 +35,16 @@ namespace MumbleSharp.Audio
         }
 
         private long _nextSequenceToDecode;
-        private readonly List<BufferPacket> _encodedBuffer = new List<BufferPacket>(); 
+        private readonly List<BufferPacket> _encodedBuffer = new List<BufferPacket>();
 
         private IVoiceCodec _codec;
+
+
+        public int sampleRate { get { return _sampleRate; } }
+        public int frameSize { get { return _frameSize; } }
+
+        public int sampleChannels { get { return WaveFormat.Channels; } }
+        public int bitsSample { get { return WaveFormat.BitsPerSample; } }
 
         public int Read(byte[] buffer, int offset, int count)
         {
