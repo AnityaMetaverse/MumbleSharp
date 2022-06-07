@@ -64,7 +64,7 @@ namespace MumbleSharp.Audio
                 Array.Clear(buffer, 0, buffer.Length);
                 return count;
             }
-
+            
             return readCount;
         }
 
