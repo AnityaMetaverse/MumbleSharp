@@ -165,7 +165,12 @@ namespace MumbleSharp.Audio
 
             //If the offset is nearing the end of the buffer then copy the data back to offset 0
             if ((_decodedOffset > _decodedCount) && (_decodedOffset + _decodedCount) > _decodedBuffer.Length * 0.9)
+            {
+                #if DEBUG
+                    Console.WriteLine("Offset: " + _decodedOffset + " count: " + _decodedCount + ", _decoded buffer length: " + _decodedBuffer.Length);
+                #endif
                 Buffer.BlockCopy(_decodedBuffer, _decodedOffset, _decodedBuffer, 0, _decodedCount);
+            }
 
             return readCount;
         }
