@@ -3,7 +3,6 @@ using MumbleSharp.Audio;
 using MumbleSharp.Audio.Codecs;
 using MumbleSharp.Packets;
 using System;
-using NAudio.Wave;
 
 namespace MumbleSharp.Model
 {

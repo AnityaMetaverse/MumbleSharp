@@ -1,5 +1,4 @@
 ﻿using MumbleSharp.Audio.Codecs;
-using NAudio.Wave;
 using System;
 using System.Collections.Generic;
 
